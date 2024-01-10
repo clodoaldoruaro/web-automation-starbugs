@@ -16,4 +16,4 @@ Cenário: Compra bem sucedida
     E escolho a forma de pagamento "Cartão de Débito"
     E finalizo a compra
     Então sou direcionado para a página de confirmação de pedidos
-    E deve ser informado um prazo de entrega de 20 à 30 minutos
+    E deve ser informado um prazo de entrega de "20 min - 30 min"

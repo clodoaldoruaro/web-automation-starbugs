@@ -19,12 +19,9 @@ Quando('finalizo a compra') do
 end
 
 Então('sou direcionado para a página de confirmação de pedidos') do
-    pending # Write code here that turns the phrase above into concrete actions
+    @sucesso_pedido.pedido_confirmado
 end
 
-Então('deve ser informado um prazo de entrega de {int} à {int} minutos') do |int, int2|
-    # Então('deve ser informado um prazo de entrega de {int} à {float} minutos') do |int, float|
-    # Então('deve ser informado um prazo de entrega de {float} à {int} minutos') do |float, int|
-    # Então('deve ser informado um prazo de entrega de {float} à {float} minutos') do |float, float2|
-    pending # Write code here that turns the phrase above into concrete actions
-end
+Então('deve ser informado um prazo de entrega de {string}') do |tempo|
+    @sucesso_pedido.tempo_entrega(tempo)
+  end
