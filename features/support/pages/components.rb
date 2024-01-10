@@ -1,6 +1,6 @@
 require 'rspec'
 
-class Message 
+class MessagePage
     include Capybara::DSL
     include RSpec::Matchers 
 

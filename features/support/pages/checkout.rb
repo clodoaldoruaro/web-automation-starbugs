@@ -1,6 +1,6 @@
 require 'rspec'
 
-class Checkout
+class CheckoutPage
     include Capybara::DSL
     include RSpec::Matchers 
 
